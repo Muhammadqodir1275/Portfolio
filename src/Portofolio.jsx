@@ -3,9 +3,7 @@ import img2 from './img/img2.webp'
 import './Portofolio.css'
 import Projects from './Projects'
 import { Link } from 'react-router-dom'
-import Box from './box'
-
-
+import Box from './Box'
 const Portofolio = () => {
 
 
