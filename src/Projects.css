@@ -1,0 +1,253 @@
+.lohyihalr{
+    display: flex;
+    justify-content: center;
+}
+.for h1 {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff007f, #ffcc00, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.for p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.Project_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.card {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    text-align: center;
+    backdrop-filter: blur(10px); 
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #1abc9c, #3498db);
+}
+
+.card:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transform: rotate(25deg);
+    transition: all 1s ease-in-out;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+}
+
+.card:hover::before {
+    top: -20%;
+    left: -20%;
+    opacity: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+    color: #f39c12;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card h3:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    transform: translateZ(20px);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card p {
+    font-size: 16px;
+    color: #f1c40f;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card p:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    transform: translateZ(20px);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card button {
+    background: linear-gradient(45deg, #ff007f, #ffcc00);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.8s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff007f);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+.card button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card button:hover::after {
+    transform: scale(4);
+    opacity: 0;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+}
+
+.card:hover {
+    transform: rotateY(15deg) rotateX(10deg); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.card:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+.pavangar {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0px 0px 4px 10px rgba(255, 255, 255, 0.1); */
+    box-shadow: 0px 8px 8px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vies h1 {
+    font-size: 28px;
+    color: #f39c12;
+}
+
+.pre {
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pre p {
+    margin: 5px 0;
+}
+
+.pre i {
+    font-size: 24px;
+    margin: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.pre i:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+.icon{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .pavangar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vies h1 {
+        font-size: 20px;
+    }
+
+    .pre {
+        font-size: 14px;
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .pre i {
+        font-size: 18px; 
+    }
+}

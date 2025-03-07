@@ -1,0 +1,147 @@
+.side_navbar {
+  border: 2px solid #D1D5DB;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  transition: all .8s;
+  align-items: flex-start; /* Chap tomonga yopishib turadi */
+}
+
+.active_side {
+  left: 0;
+}
+
+.side_navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; /* li lar chapga yopishadi */
+}
+
+.side_navbar ul li {
+  width: 250px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: left; /* Matn ham chapga yopishadi */
+  position: relative;
+}
+
+.side_navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  display: block;
+}
+
+.side_navbar ul li:hover {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  transform: translateY(-3px);
+}
+
+.side_navbar ul li:hover a {
+  color: #222;
+}
+
+.side_mode {
+  position: absolute;
+  right: 15px; /* O‘ng tomonda turishi uchun */
+  top: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.side_navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f39c12;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.side_navbar ul li:hover::after {
+  width: 100%;
+}
+.ham_button{
+  display: none;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.select-btn {
+  background: transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+
+.select-dropdown {
+  display: none;
+  position: absolute;
+  background: transparent;
+  min-width: 150px;
+}
+
+.custom-select:hover .select-dropdown {
+  display: block;
+}
+.side_sahifa{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.select-dropdown div {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.side_loyiha{
+  width: 245px;
+  gap: 30px;
+}
+@media screen and (max-width: 975px) {
+  .ham_button {
+      display: block;
+      cursor: pointer;
+  }
+  .side_navbar {
+      display: block;
+  }
+  .side_right {
+      display: none;
+  }
+  .side_right{
+    display: none;
+  }
+}
+@media screen and (min-width: 976px) {
+  .side_navbar {
+      display: none;
+  }
+}

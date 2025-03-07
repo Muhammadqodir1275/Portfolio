@@ -1,0 +1,70 @@
+.contact {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2c3e50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    color: #ecf0f1; 
+}
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f1c40f; /
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #34495e;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #34495e;
+    color: #ecf0f1;
+    transition: 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bdc3c7; 
+}
+
+input:focus, textarea:focus {
+    border-color: #f1c40f; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(241, 196, 15, 0.6);
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+button {
+    background: #f1c40f; 
+    color: #2c3e50; 
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d4ac0d; 
+}
+
+@media (max-width: 600px) {
+    .contact {
+        width: 90%;
+        padding: 15px;
+    }
+}

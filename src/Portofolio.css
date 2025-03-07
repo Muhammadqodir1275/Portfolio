@@ -1,0 +1,231 @@
+.nav {
+    width: 100%;
+    /* background-color: #222; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 50px;
+}
+
+.navbar-logo h1 {
+    color: #f39c12;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.8s ease-in-out;
+}
+.navbar-menu ul li {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.8s ease-in-out;
+}
+
+
+.navbar-menu ul li:hover {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    transform: translateY(-3px);
+}
+
+.navbar-menu ul li:hover a {
+    color: #222;
+}
+
+.navbar-menu ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f39c12;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transition: all 0.8s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar-menu ul li:hover::after {
+    width: 100%;
+}
+.mulomot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    margin: auto;
+    margin-top: 60px;
+}
+
+.my-portofolio h1 {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff007f, #ffcc00, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.my-portofolio p {
+    font-size: 18px;
+    background: linear-gradient(45deg, #ffcc00, #ff007f, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.portolio-logo img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.teach {
+    text-align: center;
+    margin-top: 50px;
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stack h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.stack p {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.stact-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card-logo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.card-logo i{
+    font-size: 45px;
+    padding: 10px;
+}
+
+.card-logo:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    .mulomot {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .my-portofolio h1 {
+        font-size: 28px;
+    }
+
+    .my-portofolio p {
+        font-size: 16px;
+    }
+
+    .portolio-logo img {
+        width: 220px;
+    }
+
+    .stack h2 {
+        font-size: 26px;
+    }
+
+    .stack p {
+        font-size: 16px;
+    }
+
+    .stact-logo {
+        gap: 15px;
+    }
+
+    .card-logo {
+        padding: 15px;
+    }
+
+    .card-logo i {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mulomot {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .my-portofolio h1 {
+        font-size: 30px;
+    }
+
+    .portolio-logo img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mulomot {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 975px){
+    .navbar-menu{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+  }

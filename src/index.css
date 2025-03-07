@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #0d1117; 
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 900px;
+  height: 100vh;
+  margin: auto;
+  /* padding: 40px; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+.saya {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.saya h1 {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff007f, #ffcc00, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.saya p {
+  font-size: 18px;
+  line-height: 1.6;
+  background: linear-gradient(45deg, #ffcc00, #ff007f, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff007f, #ffcc00);
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.button button:hover {
+  background: linear-gradient(135deg, #ffcc00, #ff007f);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.4);
+}
+
+.button button:active {
+  transform: scale(0.95);
+}
+
+.gambar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gambar img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3); 
+  border-top-color: #fff; 
+  border-radius: 50%; 
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.1); /* Engil qizil fon */
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
