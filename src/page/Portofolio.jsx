@@ -1,6 +1,6 @@
 import React from 'react'
-import img2 from './img/img2.webp'
-import './Portofolio.css'
+import img2 from '../img/img2.webp'
+import '../style/Portofolio.css'
 import Projects from './Projects'
 import { Link } from 'react-router-dom'
 import Box from './Box'
@@ -28,7 +28,6 @@ const Portofolio = () => {
                                 <li><a href="#projects" onClick={() => scrollToSection('projects')}>Loyihalarim</a></li>
                                 <li><a href="#stack-title">Men nima bilan ishlayman</a></li>
                                 <li><Link to={'/contact'}>Bog'lanish</Link></li>
-
                             </ul>
                         </div>
                         <Box />

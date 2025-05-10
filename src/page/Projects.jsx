@@ -1,10 +1,10 @@
 import React from 'react'
-import "./Projects.css"
-import xotira from './img/xotiraoyini.jpg'
-import velosiped from './img/velosiped.webp'
-import kopyuter from './img/kampyuter.jpg'
-import list from './img/todolist.jpg'
-import mode from './img/darkmode.png'
+import '../style/Projects.css'
+import xotira from '../img/xotiraoyini.jpg'
+import velosiped from '../img/velosiped.webp'
+import kopyuter from '../img/kampyuter.jpg'
+import list from '../img/todolist.jpg'
+import mode from '../img/darkmode.png'
 const Projects = () => {
     const projects = [
         {
@@ -84,6 +84,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }
