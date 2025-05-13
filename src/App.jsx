@@ -3,10 +3,8 @@ import Portofolio from './page/Portofolio'
 import Contact from './sozlama/contact'
 import { Route, Routes } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-// import { setError, setLoading } from './src/store/authSlice'
 import { setError,setLoading } from "./store/authSlice"; 
-
-// import Page from './home/Page'
+import NotFound from './home/NotFound'
 const App = () => {
   const dispatch = useDispatch();
   const { isLoading, isError } = useSelector((state) => state.auth);
@@ -42,6 +40,7 @@ const App = () => {
     {/* <Route index element={<Page />} /> */}
     <Route path='/' element={<Portofolio />} />
     <Route path="/contact" element={<Contact />} />
+    <Route path='*' element={<NotFound/>}/>
    </Routes>
    </> 
 
