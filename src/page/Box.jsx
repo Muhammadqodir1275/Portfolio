@@ -5,41 +5,39 @@ import { Link } from "react-router-dom";
 const Box = () => {
     const sideNavbar = useRef(null);
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
-    const [dropdownOpen, setDropdownOpen] = useState(false); // Dropdown ochiq yoki yopiqligini boshqarish
-
+    const [dropdownOpen, setDropdownOpen] = useState(false)
     const toggleSide = () => {
         if (sideNavbar.current) {
             sideNavbar.current.classList.toggle("active_side");
         }
     };
 
-    const applyTheme = (selectedTheme) => {
-        document.body.classList.remove("dark-mode", "light-mode");
+    // const applyTheme = (selectedTheme) => {
+    //     document.body.classList.remove("dark-mode", "light-mode");
 
-        if (selectedTheme === "dark") {
-            document.body.style.background = "black";
-            document.body.style.color = "white";
-        } else if (selectedTheme === "light") {
-            document.body.style.background = "white";
-            document.body.style.color = "black";
-        } else {
-            document.body.style.background = "#0d1117";
-            document.body.style.color = "white";
-        }
-    };
+    //     if (selectedTheme === "dark") {
+    //         document.body.style.background = "black";
+    //         document.body.style.color = "white";
+    //     } else if (selectedTheme === "light") {
+    //         document.body.style.background = "white";
+    //         document.body.style.color = "black";
+    //     } else {
+    //         document.body.style.background = "#0d1117";
+    //         document.body.style.color = "white";
+    //     }
+    // };
 
-    useEffect(() => {
-        applyTheme(theme);
-        localStorage.setItem("theme", theme);
-    }, [theme]);
-    
+    // useEffect(() => {
+    //     applyTheme(theme);
+    //     localStorage.setItem("theme", theme);
+    // }, [theme]);
+
     return (
         <>
-                    <div className="ham_button" onClick={toggleSide}>
+            <div className="ham_button" onClick={toggleSide}>
                 <h1>☰</h1>
             </div>
 
-            {/* Sidebar menyu */}
             <div className="side_navbar" ref={sideNavbar}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
@@ -50,7 +48,7 @@ const Box = () => {
             </div>
 
             {/* Theme Selector */}
-            <div className="side_right">
+            {/* <div className="side_right">
                 <div className="custom-select">
                     <button className="select-btn" onClick={() => setDropdownOpen(!dropdownOpen)}>
                         <i className={`fa-solid ${theme === "dark" ? "fa-sun" : theme === "system" ? "fa-laptop" : "fa-moon"}`}></i>
@@ -69,7 +67,7 @@ const Box = () => {
                         </div>
                     )}
                 </div>
-            </div>
+            </div> */}
             <div ref={sideNavbar} className="side_navbar">
                 <ul>
                     <li><Link to="/"> Bosh sahifa</Link></li>
@@ -78,7 +76,7 @@ const Box = () => {
                     <li><Link to="/contact"> Bog'lanish</Link></li>
                 </ul>
 
-                <div className="side_mode">
+                {/* <div className="side_mode">
                     <div className="custom-select">
                         <button className="select-btn">
                             <i className={`fa-solid ${theme === "dark" ? "fa-sun" : theme === "system" ? "fa-laptop" : "fa-moon"}`}></i>
@@ -95,7 +93,7 @@ const Box = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     );

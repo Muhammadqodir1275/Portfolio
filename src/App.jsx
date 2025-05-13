@@ -39,8 +39,8 @@ const App = () => {
   return (
    <>
    <Routes>
-    <Route index element={<Page />} />
-    <Route path='/portofolio' element={<Portofolio />} />
+    {/* <Route index element={<Page />} /> */}
+    <Route path='/' element={<Portofolio />} />
     <Route path="/contact" element={<Contact />} />
    </Routes>
    </> 

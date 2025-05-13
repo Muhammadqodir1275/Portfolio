@@ -1,5 +1,6 @@
 import React from 'react'
 import img2 from '../img/img2.webp'
+import user from '../img/user.png'
 import '../style/Portofolio.css'
 import Projects from './Projects'
 import { Link } from 'react-router-dom'
@@ -19,14 +20,16 @@ const Portofolio = () => {
                 <div className="nav">
                     <div className="navbar">
                         <div className="navbar-logo">
-                            <h1>{'{ 007 }'}</h1>
-                            <h1>pavanmg</h1>
+                            <h1>Muhammadqodir
+                                {/* {'{ 007 }'} */}
+                                </h1>
+                            {/* <h1>pavanmg</h1> */}
                         </div>
                         <div className="navbar-menu">
                             <ul>
-                                <li><Link to={'/'}>Bosh sahifa</Link></li>
                                 <li><a href="#projects" onClick={() => scrollToSection('projects')}>Loyihalarim</a></li>
                                 <li><a href="#stack-title">Men nima bilan ishlayman</a></li>
+                                <li><a href="#footer">Aloqa</a></li>
                                 <li><Link to={'/contact'}>Bog'lanish</Link></li>
                             </ul>
                         </div>
@@ -35,21 +38,22 @@ const Portofolio = () => {
                 </div>
             </nav>
             <div className="mulomot">
+                <div className="portolio-logo">
+                    <img src={user} alt="gambar" />
+                </div>
                 <div className="my-portofolio">
                     <h1>
-                        Salom 👋,
+                        Salom 👋
                         Mening ismim Muhammadqodir
-                        Men veb dasturlar yarataman
+                        Men veb
+                            dasturlar yarataman
                     </h1>
-                </div>
-                <div className="portolio-logo">
-                    <img src={img2} alt="gambar" />
+                    <p>Men frontend dasturchiman, HTML, CSS, React.js va React Context API kabi texnologiyalarni o‘rganmoqdaman. Mening maqsadim foydalanuvchi tajribasini yaxshilash uchun chiroyli va interaktiv veb-saytlar yaratish. SASS, Swiper kutubxonasi va React bilan ishlashda tajriba orttirishga harakat qilmoqdaman.</p>
                 </div>
             </div>
             <div className="teach" id='stack-title'>
                 <div className="stack">
                     <h2>Men bilan ishlaydigan texnologiyalar</h2>
-                    <p>Men ReactJS texnologiyalaridan foydalangan holda interaktiv veb-ilovalar yarataman.</p>
                 </div>
                 <div className="stact-logo">
                     <div className="card-logo">

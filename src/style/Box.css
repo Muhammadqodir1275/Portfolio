@@ -11,7 +11,7 @@
   background: rgba(0, 0, 0, 0.9);
   padding: 15px;
   transition: all .8s;
-  align-items: flex-start; /* Chap tomonga yopishib turadi */
+  align-items: flex-start; 
 }
 
 .active_side {
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-start; /* li lar chapga yopishadi */
+  align-items: flex-start; 
 }
 
 .side_navbar ul li {
@@ -36,7 +36,7 @@
   padding: 12px 15px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
-  text-align: left; /* Matn ham chapga yopishadi */
+  text-align: left;
   position: relative;
 }
 
@@ -59,7 +59,7 @@
 
 .side_mode {
   position: absolute;
-  right: 15px; /* O‘ng tomonda turishi uchun */
+  right: 15px;
   top: 15px;
   background: rgba(255, 255, 255, 0.1);
   padding: 10px;

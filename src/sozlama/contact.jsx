@@ -39,7 +39,7 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <h2>Menga bog‘laning 📩</h2>
+            <h2>Menga bog‘laning <i className="fa-solid fa-envelope"></i></h2>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"

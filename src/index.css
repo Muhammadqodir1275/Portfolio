@@ -133,7 +133,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 0, 0, 0.1); /* Engil qizil fon */
+  background-color: rgba(255, 0, 0, 0.1); 
   font-size: 24px;
   font-weight: bold;
   color: red;
