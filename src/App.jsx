@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 // import { setError, setLoading } from './src/store/authSlice'
 import { setError,setLoading } from "./store/authSlice"; 
 
-import Page from './home/Page'
+// import Page from './home/Page'
 const App = () => {
   const dispatch = useDispatch();
   const { isLoading, isError } = useSelector((state) => state.auth);

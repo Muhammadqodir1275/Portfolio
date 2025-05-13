@@ -20,8 +20,7 @@ const Portofolio = () => {
                 <div className="nav">
                     <div className="navbar">
                         <div className="navbar-logo">
-                            <h1>Muhammadqodir
-                                {/* {'{ 007 }'} */}
+                            <h1> Muhammadqodir {'{ 007 }'}
                                 </h1>
                             {/* <h1>pavanmg</h1> */}
                         </div>
@@ -50,7 +49,7 @@ const Portofolio = () => {
                     </h1>
                     <p>Men frontend dasturchiman, HTML, CSS, React.js va React Context API kabi texnologiyalarni o‘rganmoqdaman. Mening maqsadim foydalanuvchi tajribasini yaxshilash uchun chiroyli va interaktiv veb-saytlar yaratish. SASS, Swiper kutubxonasi va React bilan ishlashda tajriba orttirishga harakat qilmoqdaman.</p>
                 </div>
-            </div>
+            </div>\
             <div className="teach" id='stack-title'>
                 <div className="stack">
                     <h2>Men bilan ishlaydigan texnologiyalar</h2>
